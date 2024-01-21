@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6, nav li, footer li{
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 700;
+}
+
+p, small{
+    color: hsla(0, 0%, 50%, 0.849);
+}
+
+h5{
+    font-size: 2rem;
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 2rem;
+    margin-bottom: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#hero p{
+    width: 500px;
+    padding: 1rem 0;
+}
+
+
+#hero input{
+    border: 1px solid lightgrey;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    outline: none;
+}
+
+#hero .hero-btn{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    width: 150px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px hsla(0, 0%, 0%, 0.034);
+}
+
+
+#hero .hero-btn:hover{
+    background-color: hsla(224, 93%, 58%, 0.295);
+    transition: all ease-in-out 3s; 
+    cursor: pointer;
+}
+
+
+#hero, main{
+    margin-bottom: 100px;
+}
+
+.main-p{
+    width: 600px;
+    padding: 1rem 0;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+
+nav a{
+    text-decoration: none;
+}
+
+.useful-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+
+
+.flex-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.art{
+    width: 600px;
+}
+
+.profile img{
+    width: 50px;
+    border-radius: 100%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.small-p a{
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    width: fit-content;
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+
+.phone{
+    background-image: url(../images/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+}
+
+.email{
+    background-image: url(../images/icon-email.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+}
+
+.quote{
+    max-width: 400px;
+    width: fit-content;
+    box-shadow: 4px 4px 4px 4px hsla(0, 0%, 0%, 0.144);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.warning {
+    display: none;
+}
+
+
+.quote p{
+    padding: 0.3rem 0;
+}
+#outro{
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(0, 0%, 100%);
+    padding: 5rem 0;
+}
+
+#outro p{
+    width: 450px;
+    padding: 1rem 0;
+}
+
+#outro input{
+    width: 100%;
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.8rem;
+}
+
+#outro .outro-btn{
+    background-color: rgba(11, 11, 160, 0.507);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.144);
+}
+
+.footer-flex-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    gap: 10px; 
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+}
+
+.socials img {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 100%;
+    overflow: hidden;
+    border: .5px solid hsl(0, 0%, 100%);
+    padding: .2rem;
+}
+
+
+
+footer .footer-flex-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+input::placeholder{
+    color: hsla(0, 0%, 83%, 0.808);
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(0, 0%, 100%);
+    padding: 6rem 0;
+}
+
+footer p, footer li{
+    padding: 0.5rem 0;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+footer img{
+    margin-bottom: 20px;
+
+}
+footer img, .socials img{
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+
+}
+
+footer p, #outro p{
+    color: hsl(0, 0%, 100%);
+}
