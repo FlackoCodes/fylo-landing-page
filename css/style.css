@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,h6, nav li, footer li{
     font-weight: 700;
 }
 
+img{
+    max-width: 100%;
+    /* width: 100%; */
+}
 
 h1{
     font-size: 2rem;
@@ -28,11 +32,10 @@ p, small{
 
 h5{
     font-size: 2rem;
-
 }
 
 .container{
-    width: 80%;
+    width: 85vw;
     margin: 0 auto;
 }
 
@@ -111,8 +114,8 @@ nav a{
 }
 
 .art{
-    width: 600px;
-}
+    width: 800px;
+} 
 
 .profile img{
     width: 50px;
