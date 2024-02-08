@@ -16,8 +16,14 @@ h1,h2,h3,h4,h5,h6, nav li, footer li{
     font-weight: 700;
 }
 
+
+h1{
+    font-size: 2rem;
+}
+
 p, small{
-    color: hsla(0, 0%, 50%, 0.849);
+    color: hsl(243, 87%, 12%);
+    font-weight: 500;
 }
 
 h5{
@@ -41,8 +47,6 @@ nav{
     align-items: center;
 }
 
-
-
 #hero p{
     width: 500px;
     padding: 1rem 0;
@@ -61,8 +65,7 @@ nav{
     border: none;
     width: 150px;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 3px;
-    box-shadow: 3px 3px 3px 3px hsla(0, 0%, 0%, 0.034);
+    box-shadow: 4px 4px 4px 4px hsla(0, 0%, 0%, 0.034);
 }
 
 
@@ -73,7 +76,7 @@ nav{
 }
 
 
-#hero, main{
+#hero{
     margin-bottom: 100px;
 }
 
@@ -89,6 +92,8 @@ nav li{
 
 nav a{
     text-decoration: none;
+    color: darkgray;
+    font-weight: 600;
 }
 
 .useful-links{
@@ -112,6 +117,11 @@ nav a{
 .profile img{
     width: 50px;
     border-radius: 100%;
+}
+
+main{
+    background: url(../images/bg-curve-desktop.svg) no-repeat center center/cover;
+    padding: 100px 0;
 }
 
 .profile{
