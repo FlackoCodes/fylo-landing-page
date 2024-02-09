@@ -89,7 +89,7 @@ header{
 }
 
 
-.hero-btn{
+.hero-btn, .outro-btn{
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -154,6 +154,120 @@ main p{
 
 main .main-p2{
     margin: 20px 0;
+}
+
+main .small-p{
+    text-align: center;
+}
+
+main p>a{
+    background-image: url(../images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    width: fit-content;
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+
+.quote{
+    max-width: 400px;
+    width: fit-content;
+    box-shadow: 4px 4px 4px 4px hsla(0, 0%, 0%, 0.144);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quote p{
+    margin-bottom: 15px;
+    color: hsl(243, 87%, 12%);
+}
+
+.profile img{
+    width: 50px;
+    border-radius: 100%;
+}
+
+#outro{
+    background-color: hsl(238, 22%, 44%);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    padding: 60px 0;
+}
+
+#outro p{
+    color: hsl(0, 0%, 100%);
+    padding: 20px 0;
+}
+
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(0, 0%, 75%);
+    padding: 3rem 0 2rem 0;
+}
+
+.phone{
+    background-image: url(../images/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    color: hsl(0, 0%, 75%);
+}
+
+.email{
+    background-image: url(../images/icon-email.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    color: hsl(0, 0%, 75%);
+}
+
+footer img, .socials img{
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.socials img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 100%;
+    overflow: hidden;
+    border: .5px solid hsl(0, 0%, 100%);
+    padding: .5rem;
+}
+
+
+._whya3{
+    text-align: start;
+    padding: 20px 0;
+}
+
+footer p, footer li{
+    padding: 0.5rem 0;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer li a{
+    color: hsl(0, 0%, 75%);
+    text-decoration: none;
 }
 
 /* 
@@ -223,52 +337,12 @@ header{
     width: 800px;
 } 
 
-.profile img{
-    width: 50px;
-    border-radius: 100%;
-}
-
-
-
-.profile{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
 .small-p a{
-    background-image: url(../images/icon-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 20px;
-    border-bottom: 2px solid hsl(170, 45%, 43%);
-    width: fit-content;
-    color: hsl(170, 45%, 43%);
-    text-decoration: none;
+ 
 }
 
-.phone{
-    background-image: url(../images/icon-phone.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-}
 
-.email{
-    background-image: url(../images/icon-email.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-}
-
-.quote{
-    max-width: 400px;
-    width: fit-content;
-    box-shadow: 4px 4px 4px 4px hsla(0, 0%, 0%, 0.144);
-    padding: 1rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
 
 .warning {
     display: none;
@@ -320,14 +394,7 @@ header{
     align-items: center;
 }
 
-.socials img {
-    width: 25px; 
-    height: 25px; 
-    border-radius: 100%;
-    overflow: hidden;
-    border: .5px solid hsl(0, 0%, 100%);
-    padding: .2rem;
-}
+
 
 
 
@@ -343,30 +410,14 @@ input::placeholder{
 footer{
     background-color: hsl(243, 87%, 12%);
     color: hsl(0, 0%, 100%);
-    padding: 6rem 0;
 }
 
-footer p, footer li{
-    padding: 0.5rem 0;
-}
-
-footer li{
-    list-style-type: none;
-}
-
-footer li a{
-    color: hsl(0, 0%, 100%);
-    text-decoration: none;
-}
 
 footer img{
     margin-bottom: 20px;
 
 }
-footer img, .socials img{
-    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
 
-}
 
 footer p, #outro p{
     color: hsl(0, 0%, 100%);
