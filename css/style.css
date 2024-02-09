@@ -208,6 +208,19 @@ main p>a{
     padding: 20px 0;
 }
 
+.outro-input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.outro-input::placeholder{
+    color: hsl(0, 0%, 75%);
+    font-size: 1.1rem;
+}
 
 footer{
     background-color: hsl(243, 87%, 12%);
@@ -251,6 +264,9 @@ footer img, .socials img{
     padding: .5rem;
 }
 
+/* .outro-input{
+    width: 100%;
+} */
 
 ._whya3{
     text-align: start;
@@ -268,6 +284,112 @@ footer li{
 footer li a{
     color: hsl(0, 0%, 75%);
     text-decoration: none;
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    img{
+        max-width: 100%;
+        /* width: 100%; */
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    nav img{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 1.3rem;
+    }
+
+    header{
+        padding: 2rem 0;
+    }
+
+    #hero{
+        text-align: start;
+        margin-bottom: 100px;
+    }
+
+    main{
+        background: url(../images/bg-curve-desktop.svg) center center/cover;
+        padding: 100px 0;
+    }
+
+    .useful-links{
+        gap: 1.5rem;
+    }
+
+    .flex-items{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    #hero .flex-items .art, main .flex-items .art{
+        width: 700px;
+        order: 1;
+    }
+
+    #hero p, .main-p, .main-p2{
+        width: 550px;
+    }
+
+    #outro, main .flex-items h2, main .small-p{
+        text-align: start;
+    }
+
+    #emailInput, .hero-btn{
+        width: 40%;
+    }
+
+    .hero-btn{
+        display: inline;
+    }
+    
+    .outro-input{
+        width: 400px;
+    }
+
+    #outro p{
+        width: 500px;
+    }
+
+    .outro-btn{
+        width: 40%;
+    }
+
+    .small-p{
+        margin-bottom: 50px;
+    }
+
+    .main-p, .main-p2{
+        color: hsl(243, 87%, 12%);
+    }
+
+    .socials{
+        margin-top: 20px;
+    }
+
+    .socials img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-flex-items{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* 
