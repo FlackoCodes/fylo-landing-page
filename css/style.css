@@ -286,20 +286,24 @@ footer li a{
     text-decoration: none;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width:1024px) {
+    img,input{
+        max-width: 100%;
+    }
+
+    header{
+        padding-top: 1.5rem;
+    }
+
     .container{
+        padding: 0;
         width: 85%;
         margin: 0 auto;
-        padding: 0;
     }
 
-    img{
-        max-width: 100%;
-        /* width: 100%; */
-    }
-
+    
     h1{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     nav img{
@@ -310,17 +314,13 @@ footer li a{
         font-size: 1.3rem;
     }
 
-    header{
-        padding: 2rem 0;
-    }
-
     #hero{
         text-align: start;
         margin-bottom: 100px;
     }
 
     main{
-        background: url(../images/bg-curve-desktop.svg) center center/cover;
+        background: url(../images/bg-curve-desktop.svg) center center/cover !important;
         padding: 100px 0;
     }
 
@@ -328,27 +328,30 @@ footer li a{
         gap: 1.5rem;
     }
 
-    .flex-items{
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     
     #hero .flex-items .art, main .flex-items .art{
-        width: 700px;
+        width: 400px;
         order: 1;
     }
 
     #hero p, .main-p, .main-p2{
-        width: 550px;
+        width: 450px;
     }
 
     #outro, main .flex-items h2, main .small-p{
         text-align: start;
     }
 
+
+    .flex-items{
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    
     #emailInput, .hero-btn{
         width: 40%;
     }
@@ -390,6 +393,50 @@ footer li a{
         display: flex;
         justify-content: space-between;
     }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1{
+       font-size: 2rem;
+    }
+
+    #hero p, .main-p, .main-p2{
+        font-size: 1.1rem;
+        width: 600px;color: hsla(243, 87%, 12%, 0.679);
+    }
+
+    .art{
+        width: 450px !important;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    .art{
+        width: 700px !important;
+    }
+
+    .flex-items{
+        gap: 0 !important;
+    }
+}
+/* 
+@media screen and (min-width: 1024px){
+
+    
+
+   
+
+    
+
+  
+
+  
+
+   
+    
+   
 }
 
 /* 
@@ -478,9 +525,9 @@ header{
     background-color: hsl(238, 22%, 44%);
     color: hsl(0, 0%, 100%);
     padding: 5rem 0;
-}
+} */
 
-#outro p{
+/* #outro p{
     width: 450px;
     padding: 1rem 0;
 }
@@ -543,4 +590,4 @@ footer img{
 
 footer p, #outro p{
     color: hsl(0, 0%, 100%);
-} */
+} */ */
